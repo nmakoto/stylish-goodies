@@ -1,10 +1,10 @@
-/*  myanimelist.net -- suigintou night theme ANIMELIST by viilo [0.1]
-    This style is for myanimelist.net custom anime/manga lists
-
-    Copy/paste this style in 'Advanced Style CSS Editor' on the MAL-site
-
-    Using via stylish will override any other MAL-users custom styles for U.
-*/
+/* myanimelist.net -- suigintou night theme ANIMELIST by viilo [0.1]
+ * vim:et:
+ *
+ * This style is for myanimelist.net custom anime/manga lists
+ * Copy/paste this style in 'Advanced Style CSS Editor' on the MAL-site
+ * Using via stylish will override any other MAL-users custom styles for you.
+ */
 
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document
@@ -14,122 +14,114 @@
 
 /* Suigintou Night Theme style */
 body {
-	background-image: url("http://img163.imageshack.us/img163/6159/417691.jpg") !important;
-	background-attachment: fixed  !important;
-	background-repeat: no-repeat !important;
-	background-position: center bottom !important;
+    background-image:
+        url( "http://img163.imageshack.us/img163/6159/417691.jpg" ) !important;
+    background-attachment:  fixed  !important;
+    background-repeat:      no-repeat !important;
+    background-position:    center bottom !important;
 
-	color: #FFFFFF  !important;
-	font-size: 12.00px !important;
-	font-family: Ubuntu, Verdana, Arial !important;
-	background-color: #000000 !important;
+    color:                  #FFF !important;
+    font-size:              12.00px !important;
+    font-family:            Ubuntu, Verdana, Arial !important;
+    background-color:       #000 !important;
 }
 
 /* Determines the positioning of your list */
 #list_surround
 {
-	/*margin: 0 auto;*/
-	margin-left: 40px !important;
-	width: 920px !important;
+    margin-left:            40px !important;
+    width:                  920px !important;
 }
 
 /* All links on your list */
 a {
-	color: #7C9EB3 !important;
-/*	color: #7C9EB3;*/
-	text-decoration: none !important;
+    color:                  #7C9EB3 !important;
+    text-decoration:        none !important;
 }
 
 a:visited {
-	color: #7C9EB3 !important;
-/*	color: #7C9EB3;*/
-	text-decoration: none !important;
+    color:                  #7C9EB3 !important;
+    text-decoration:        none !important;
 }
 
 a:hover {
-	color: #a77cb3 !important;
-/*	color: #7C9EB3;*/
-	text-decoration: underline !important;
+    color:                  #a77cb3 !important;
+    text-decoration:        underline !important;
 }
 
 /* Alternating row color 1 */
 .td1 {
-	color: #FFFFFF !important;
-	border-width: 0px 1px 1px 0px !important;
-	border-style: solid !important;
-	border-color: #000000 !important;
-	padding: 2px !important;
-/*	background-color: #464646;*/
-	background-color:  rgb( 80, 80, 80 ) !important;
-	background-color:  rgba( 80, 80, 80, 0.8 ) !important;
+    color:                  #FFFFFF !important;
+    border-width:           0px 1px 1px 0px !important;
+    border-style:           solid !important;
+    border-color:           #000000 !important;
+    padding:                2px !important;
+    background-color:       rgb( 80, 80, 80 ) !important;
+    background-color:       rgba( 80, 80, 80, 0.8 ) !important;
 }
 
 /* Alternating row color 2 */
 .td2 {
-	color: #FFFFFF !important;
-	border-width: 0px 1px 1px 0px !important;
-	border-style: solid !important;
-	border-color: #000000 !important;
-	padding: 2px !important;
-/*	background-color: #5A5A5A;*/
-	background-color:  rgb( 100, 100, 100 ) !important;
-	background-color:  rgba( 100, 100, 100, 0.8 ) !important;
+    color:                  #FFFFFF !important;
+    border-width:           0px 1px 1px 0px !important;
+    border-style:           solid !important;
+    border-color:           #000000 !important;
+    padding:                2px !important;
+    background-color:       rgb( 100, 100, 100 ) !important;
+    background-color:       rgba( 100, 100, 100, 0.8 ) !important;
 }
 
 /* This represents the "Anime Title", "Score", "# Eps" columns */
 .table_header {
-	color: #FFFFFF !important;
-	border-width: 1px 1px 1px 0px !important;
-	border-style: solid !important;
-	border-color: #000000 !important;
-	background-color: #000000 !important;
-	padding: 2px !important;
+    color:                  #FFFFFF !important;
+    border-width:           1px 1px 1px 0px !important;
+    border-style:           solid !important;
+    border-color:           #000000 !important;
+    background-color:       #000000 !important;
+    padding:                2px !important;
 }
 
 /* headerLink represents the color of the links inside the_header */
 .table_headerLink {
-	/*color: ;*/
-}
-.table_headerLink:Visited {
-	/*color: ;*/
 }
 
-.table_headerLink:Hover {
-	/*color: ;*/
+.table_headerLink:visited {
+}
+
+.table_headerLink:hover {
 }
 
 /* Controls the select form decoration (the drop down select box) */
 .form {
-	border-width: 1px 1px 1px 1px !important;
-	border-color: #000000 !important;
-	border-style: solid !important;
-	color: #000000 !important;
-	padding: 2px !important;
-	font-size: 11.00px !important;
-	font-family: Verdana, Arial !important;
+    border-width:           1px 1px 1px 1px !important;
+    border-color:           #000000 !important;
+    border-style:           solid !important;
+    color:                  #000000 !important;
+    padding:                2px !important;
+    font-size:              11.00px !important;
+    font-family:            Verdana, Arial !important;
 }
 
 /* Which 'status' up top is selected? */
 .status_selected {
-	color: #FFFFFF !important;
-	border-width: 0px 1px 1px 0px !important;
-	border-style: solid !important;
-	border-color: #000000 !important;
-	padding: 2px !important;
-	background-color: #464646 !important;
+    color:                  #FFFFFF !important;
+    border-width:           0px 1px 1px 0px !important;
+    border-style:           solid !important;
+    border-color:           #000000 !important;
+    padding:                2px !important;
+    background-color:       #464646 !important;
 }
 
 .status_not_selected {
-	color: #FFFFFF !important;
-	border-width: 0px 1px 1px 0px !important;
-	border-style: solid !important;
-	border-color: #000000 !important;
-	padding: 2px !important;
-	background-color: #5A5A5A !important;
+    color:                  #FFFFFF !important;
+    border-width:           0px 1px 1px 0px !important;
+    border-style:           solid !important;
+    border-color:           #000000 !important;
+    padding:                2px !important;
+    background-color:       #5A5A5A !important;
 }
 
 /* Header classes for Currently Watching, Completed, Dropped, etc... */
-
 .header_cw {
 }
 
@@ -146,21 +138,21 @@ a:hover {
 }
 
 .header_title {
-	font-size: 14px !important;
-	font-weight: bold !important;
+    font-size:              14px !important;
+    font-weight:            bold !important;
 }
 
 .category_totals {
 }
 
 #grand_totals {
-	text-align: center !important;
+    text-align:             center !important;
 }
 
 /* header_al is thesurrounding "User's Anime List" at the top */
 .header_al {
-	font-weight: bold !important;
-	font-size: 16px !important;
+    font-weight:            bold !important;
+    font-size:              16px !important;
 }
 
 /* header_al_links is thewith your "Profile" and "MyAnimeList home" links */
@@ -169,19 +161,18 @@ a:hover {
 
 /* controls what styles you can give to all the anime titles in your list */
 .animetitle {
-	font-weight: bold !important;
+    font-weight:            bold !important;
 }
 
-/*
-copyright contains the "Producted by Garrett Gyssler" text
-DO NOT REMOVE OR HIDE THIS DIV
-IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
-*/
+/* copyright contains the "Producted by Garrett Gyssler" text
+ * DO NOT REMOVE OR HIDE THIS DIV
+ * IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
+ */
 #copyright {
-	padding-top: 6px !important;
-	text-align: center !important;
-	margin: 0 auto !important;
-	width: 920px !important;
+    padding-top:            6px !important;
+    text-align:             center !important;
+    margin:                 0 auto !important;
+    width:                  920px !important;
 }
 
 }
