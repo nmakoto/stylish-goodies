@@ -2,3 +2,6 @@ README
 Project:        stylish-goodies
 Descriprion:    Custom css-styles for many sites using Stylish browser addon
 
+.Site: myanimelist.net
+	suigintou_night_theme.css           -- Suigintou Night Theme
+	suigintou_night_theme_animelist.css -- Suigintou Night Theme for animelist
