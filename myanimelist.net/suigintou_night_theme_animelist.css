@@ -1,9 +1,12 @@
-/* myanimelist.net -- suigintou night theme ANIMELIST by viilo [0.1]
+/* myanimelist.net -- suigintou night theme ANIMELIST by viilo [0.2]
  * vim:et:
  *
- * This style is for myanimelist.net custom anime/manga lists
- * Copy/paste this style in 'Advanced Style CSS Editor' on the MAL-site
- * Using via stylish will override any other MAL-users custom styles for you.
+ * This style is for myanimelist.net custom anime/manga lists.
+ *
+ * Usage:
+ * a) Copy/paste anything within [MAL-style section] (below)
+ *    in 'Advanced Style CSS Editor' on the MAL-site.
+ * b) Using via stylish will override any other MAL-users custom styles for you.
  */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -12,7 +15,7 @@
     url-prefix("http://myanimelist.net/mangalist")
 {
 
-/* Suigintou Night Theme style */
+/* [MAL-style section] BEGIN */
 body {
     background-image:
         url( "http://img163.imageshack.us/img163/6159/417691.jpg" ) !important;
@@ -20,7 +23,7 @@ body {
     background-repeat:      no-repeat !important;
     background-position:    center bottom !important;
 
-    color:                  #FFF !important;
+    color:                  #CCC !important;
     font-size:              12.00px !important;
     font-family:            Ubuntu, Verdana, Arial !important;
     background-color:       #000 !important;
@@ -31,52 +34,56 @@ body {
 {
     margin-left:            40px !important;
     width:                  920px !important;
+    padding-left:           4px !important;
+    padding-right:          4px !important;
+    background:             rgb( 0, 0, 0 ) !important;
+    background:             rgba( 0, 0, 0, 0.5 ) !important;
 }
 
 /* All links on your list */
 a {
-    color:                  #7C9EB3 !important;
+    color:                  #768 !important;
     text-decoration:        none !important;
 }
 
 a:visited {
-    color:                  #7C9EB3 !important;
+    color:                  #768 !important;
     text-decoration:        none !important;
 }
 
 a:hover {
-    color:                  #a77cb3 !important;
+    color:                  #A9B !important;
     text-decoration:        underline !important;
 }
 
 /* Alternating row color 1 */
 .td1 {
-    color:                  #FFFFFF !important;
+    color:                  #CCC !important;
     border-width:           0px 1px 1px 0px !important;
     border-style:           solid !important;
     border-color:           #000000 !important;
     padding:                2px !important;
-    background-color:       rgb( 80, 80, 80 ) !important;
-    background-color:       rgba( 80, 80, 80, 0.8 ) !important;
+    background-color:       rgb( 33, 33, 33 ) !important;
+    background-color:       rgba( 33, 33, 33, 0.8 ) !important;
 }
 
 /* Alternating row color 2 */
 .td2 {
-    color:                  #FFFFFF !important;
+    color:                  #CCC !important;
     border-width:           0px 1px 1px 0px !important;
     border-style:           solid !important;
     border-color:           #000000 !important;
     padding:                2px !important;
-    background-color:       rgb( 100, 100, 100 ) !important;
-    background-color:       rgba( 100, 100, 100, 0.8 ) !important;
+    background-color:       rgb( 55, 55, 55 ) !important;
+    background-color:       rgba( 55, 55, 55, 0.8 ) !important;
 }
 
 /* This represents the "Anime Title", "Score", "# Eps" columns */
 .table_header {
-    color:                  #FFFFFF !important;
-    border-width:           1px 1px 1px 0px !important;
-    border-style:           solid !important;
-    border-color:           #000000 !important;
+    color:                  #CCC !important;
+    border-style:           none !important;
+    border-color:           #000 !important;
+    border-bottom:          1px solid #555 !important;
     background-color:       #000000 !important;
     padding:                2px !important;
 }
@@ -109,7 +116,9 @@ a:hover {
     border-style:           solid !important;
     border-color:           #000000 !important;
     padding:                2px !important;
-    background-color:       #464646 !important;
+    font-weight:            bold !important;
+    background-color:       rgb( 55, 55, 55 )  !important;
+    background-color:       rgba( 55, 55, 55, 0.8 )  !important;
 }
 
 .status_not_selected {
@@ -118,7 +127,9 @@ a:hover {
     border-style:           solid !important;
     border-color:           #000000 !important;
     padding:                2px !important;
-    background-color:       #5A5A5A !important;
+    font-weight:            normal !important;
+    background-color:       rgb( 33, 33, 33 )  !important;
+    background-color:       rgba( 33, 33, 33, 0.8 )  !important;
 }
 
 /* Header classes for Currently Watching, Completed, Dropped, etc... */
@@ -172,7 +183,30 @@ a:hover {
     padding-top:            6px !important;
     text-align:             center !important;
     margin:                 0 auto !important;
-    width:                  920px !important;
+    width:                  900px !important;
+    background:             rgb( 0,0,0 ) !important;
+    background:             rgba( 0,0,0, 0.7 ) !important;
+}
+
+#copyright:after {
+    content:                " Suigintou Night Theme by viilo" !important;
+}
+/* [MAL-style section] END */
+
+/* Making fixed MAL top header */
+table#mal_control_strip {
+    position:               fixed !important;
+    z-index:                10 !important;
+}
+#list_surround
+{
+    position:               relative !important;
+    top:                    40px !important;
+}
+
+table#mal_control_strip td {
+    background-color:       rgb( 22, 22, 22 ) !important;
+    background-color:       rgba( 22, 22, 22, 0.6 ) !important;
 }
 
 }
