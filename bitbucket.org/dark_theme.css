@@ -1,4 +1,4 @@
-/*  bitbucket.org -- Dark Theme by viilo [0.1]
+/*  bitbucket.org -- Dark Theme by viilo [0.2]
 */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -13,7 +13,7 @@ body {
 #footer, #header-wrap, #repo-desc, #repo-menu, #source-summary,
 #wiki pre, pre.merge-commands, #pull-from, #pull-into
 div#source-view, div#source-view td.linenos, div#source-view .header,
-.more-help {
+.more-help, #issues-new-form {
     background-color: #222 !important;
     background: rgba( 0,0,0,0.4 ) !important;
 }
@@ -28,7 +28,7 @@ div#source-view, div#source-view td.linenos, div#source-view .header,
 }
 
 #repo-desc, #repo-menu, #messages #no-notifications, #messages #compose,
-div#source-view, .more-help {
+div#source-view, .more-help, #issues-new-form {
     border: 1px solid #444 !important;
 }
 
@@ -88,11 +88,9 @@ dd.branch a {
     border-color: #000 !important;
 }
 
-
 #zealots-list li {
     border: none !important;
 }
-
 
 img.avatar,
 dd.avatar img {
@@ -118,10 +116,23 @@ table.iterable tr {
 
 td.hash a code,
 pre.plaintext, pre#clone-url-ssh, td.name, #wiki pre,
-pre.merge-commands, pre
-{
-    font-family: Ubuntu Mono, Liberation, Courier New !important;
+pre.merge-commands, pre {
+    font-family: Ubuntu Mono, Liberation Mono, Courier New !important;
     font-size: 12pt !important;
+}
+
+#tabs ul {
+    font-family: Ubuntu, Liberation, Arial !important;
+    font-size: 10pt !important;
+}
+
+pre, code {
+    background: rgba( 20,20,20,0.8 ) !important;
+    border-color: #000 !important;
+}
+
+p code, li code {
+    color: #ccc !important;
 }
 
 #tabs ul li {
@@ -179,13 +190,18 @@ a#repo-create-pr-link {
     text-shadow: 0px 1px 0px rgb( 0,0,0 ) !important;
 }
 
-#sidebar > ul > li > a,
-a#open-link, a#accepted-link, a#rejected-link {
+#sidebar ul > li > a,
+a#open-link, a#accepted-link, a#rejected-link, ul#issues-list-filters a
+{
     background: #444 !important;
     background: -moz-linear-gradient( top, #454, #676, #454 ) !important;
     border: 1px solid #454 !important;
     color: #aca !important;
     text-shadow: 0px 1px 0px rgb( 0,0,0 ) !important;
+}
+
+ul#issues-list-filters .selected a, #pullrequest a:active {
+    background: -moz-linear-gradient( top, #454, #454, #676 ) !important;
 }
 
 .detailed > li:hover,
@@ -201,14 +217,15 @@ a#open-link, a#accepted-link, a#rejected-link {
     background: rgba( 0,0,0, 0.4 ) !important;
 }
 
-#sidebar > ul, #sidebar > ul > li > a {
+#sidebar ul, #sidebar ul > li > a {
     border: none !important;
 }
 
-#sidebar > ul > li > a, #sidebar > ul > li > a:before,
-form.newform input,
-.text input,
-form.newform textarea {
+#sidebar ul > li > a, #sidebar ul > li > a:before,
+form.newform input, form input,
+.text input, form textarea, form.newform textarea,
+form select,
+div#preview {
     border: #000 !important;
     background: rgba( 0,0,0, 0.2 ) !important;
     color: #ccc !important;
@@ -217,11 +234,16 @@ form.newform textarea {
     color: #666 !important;
 }
 
+div#preview {
+    border: 1px solid #444 !important;
+}
+
 form.newform input[type="submit"],
 div.action input[type="submit"],
 div.actions input[type="submit"] {
-    background: -moz-linear-gradient(top, rgba(44,44,44,0.8), rgba(66,66,66, 0.8) ) !important;
-
+    background: -moz-linear-gradient(
+        top, rgba(44,44,44,0.8), rgba(66,66,66, 0.8)
+    ) !important;
 }
 
 form.newform input[type="submit"],
