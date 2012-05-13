@@ -1,0 +1,236 @@
+/*  bitbucket.org -- Dark Theme by viilo [0.1]
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("bitbucket.org") {
+
+body {
+    background: url("http://i.imgur.com/7Prf6.jpg") #222
+        top left repeat-y fixed !important;
+    color: #888 !important;
+}
+
+#footer, #header-wrap, #repo-desc, #repo-menu, #source-summary,
+#wiki pre, pre.merge-commands, #pull-from, #pull-into
+div#source-view, div#source-view td.linenos, div#source-view .header,
+.more-help {
+    background-color: #222 !important;
+    background: rgba( 0,0,0,0.4 ) !important;
+}
+
+#more-help {
+    background-image: url("https://bitbucket.org/img/help-book.png") !important;
+}
+
+#footer {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+#repo-desc, #repo-menu, #messages #no-notifications, #messages #compose,
+div#source-view, .more-help {
+    border: 1px solid #444 !important;
+}
+
+#wiki, #wiki pre, pre.merge-commands,
+#source-summary, #pull-from, #pull-into,
+#repo-desc-cloneinfo, div#source-view td.linenos, div#source-view .header {
+    border-color: #444 !important;
+}
+
+#toggle-repo-content {
+    background-color: #444 !important;
+    background-color: rgba( 66,66,66, 0.8 ) !important;
+    border-top: 1px solid #444 !important;
+}
+
+#header-wrap {
+    border-bottom: 2px solid #000 !important;
+}
+
+#header-wrap:after {
+    background: none !important;
+}
+
+#footer {
+    border-top: 1px solid #000 !important;
+}
+
+td.name a:before,
+td.labels:before, td.labels:after, td.labels,
+td.person:before, td.person:after {
+    background: none !important;
+}
+
+dd.branch {
+    background-color: #122 !important;
+    border-color: #000 !important;
+}
+
+dd.branch a {
+    color: #486 !important;
+}
+
+#view-at-form, .commit-filter-control input {
+    background-color: #000 !important;
+    background: rgba( 100,120,110, 0.8 ) !important;
+    border: #000 !important;
+        color: #cdc !important;
+}
+
+#commit-filter {
+    background: -moz-linear-gradient( top, #333, #444, #333 ) !important;
+    border-color: #333 !important;
+}
+
+#zealots-list img,
+#commit-filter a {
+    border-color: #000 !important;
+}
+
+
+#zealots-list li {
+    border: none !important;
+}
+
+
+img.avatar,
+dd.avatar img {
+    background: rgba( 0,0,0, 0.8 ) !important;
+}
+
+img.avatar,
+dd.avatar img {
+    border-color: #444 !important;
+}
+
+#searchbox, #view-at-input {
+    background-color: #222 !important;
+    background: rgba( 100,120,110, 0.8 ) !important;
+    color: #cdc !important;
+}
+
+table.iterable tr {
+    color: #486 !important;
+    border: none !important;
+    border-bottom: 2px solid #000 !important;
+}
+
+td.hash a code,
+pre.plaintext, pre#clone-url-ssh, td.name, #wiki pre,
+pre.merge-commands, pre
+{
+    font-family: Ubuntu Mono, Liberation, Courier New !important;
+    font-size: 12pt !important;
+}
+
+#tabs ul li {
+    background: -moz-linear-gradient( top, #444, #555 ) !important;
+    border-color: #666 !important;
+    color: #acb !important;
+}
+
+#tabs ul .selected {
+    background: -moz-linear-gradient( top, #464, #575 ) !important;
+    border: 1px solid #575 !important;
+}
+
+ul.metadata ul, ul.metadata ul > li,
+ul.downloads, #repo-menu-links ul > li,
+#tabs > ul > .selected > a
+{
+    border: none !important;
+    color: #eff !important;
+}
+
+ul.metadata ul > li > a,
+#repo-menu-links ul > li > a {
+    color: #eff !important;
+}
+
+#repo-menu-links ul > li > a:hover {
+    text-decoration: none !important;
+}
+
+.drop-arrow.active,
+ul.metadata ul > li,
+#repo-menu-links ul > li,
+#tabs > ul > li > ul > li > a {
+    background: rgb( 66,66,66 ) !important;
+    border: 1px solid #000 !important;
+}
+
+ul.metadata ul > li:hover,
+#repo-menu-links ul > li:hover,
+#tabs > ul > li > ul > li > a:hover {
+    background: rgb( 66,88,66 ) !important;
+    text-decoration: none !important;
+}
+
+#shortlogs-changes img {
+    border-color: #000 !important;
+}
+
+a#repo-create-pr-link {
+    background: #444 !important;
+    background: -moz-linear-gradient( top, #242, #262, #242 ) !important;
+    border: 1px solid #242 !important;
+    color: #8ca !important;
+    text-shadow: 0px 1px 0px rgb( 0,0,0 ) !important;
+}
+
+#sidebar > ul > li > a,
+a#open-link, a#accepted-link, a#rejected-link {
+    background: #444 !important;
+    background: -moz-linear-gradient( top, #454, #676, #454 ) !important;
+    border: 1px solid #454 !important;
+    color: #aca !important;
+    text-shadow: 0px 1px 0px rgb( 0,0,0 ) !important;
+}
+
+.detailed > li:hover,
+.detailed > li:nth-child(2n):hover {
+    background: rgba( 66,66,66, 0.4 ) !important;
+}
+
+.detailed > li {
+    background: rgba( 0,0,0, 0.2 ) !important;
+}
+
+.detailed > li:nth-child(2n) {
+    background: rgba( 0,0,0, 0.4 ) !important;
+}
+
+#sidebar > ul, #sidebar > ul > li > a {
+    border: none !important;
+}
+
+#sidebar > ul > li > a, #sidebar > ul > li > a:before,
+form.newform input,
+.text input,
+form.newform textarea {
+    border: #000 !important;
+    background: rgba( 0,0,0, 0.2 ) !important;
+    color: #ccc !important;
+}
+.text input:disabled {
+    color: #666 !important;
+}
+
+form.newform input[type="submit"],
+div.action input[type="submit"],
+div.actions input[type="submit"] {
+    background: -moz-linear-gradient(top, rgba(44,44,44,0.8), rgba(66,66,66, 0.8) ) !important;
+
+}
+
+form.newform input[type="submit"],
+form.newform input[type="reset"],
+div.action input[type="submit"],
+div.actions input[type="submit"],
+div.actions input[type="reset"] {
+    text-shadow: 0px 1px 0px #000 !important;
+    border: 1px solid #000 !important;
+}
+
+}
